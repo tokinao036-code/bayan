@@ -1,0 +1,57 @@
+{
+  "id": "bayan",
+  "title": "Bayan",
+  "version": 1,
+  "speakers": {
+    "timur":    { "name": "Тимур",        "ar": "تَيْمور",       "voice": "ar-JO-TaimNeural",    "dialect": "ru", "color": "#2E6B4F" },
+    "faisal":   { "name": "Фейсал",       "ar": "فَيْصَل",       "voice": "ar-SA-HamedNeural",   "dialect": "sa", "color": "#B7832A" },
+    "officer":  { "name": "Офицер",       "ar": "الضّابِط",      "voice": "ar-KW-FahedNeural",   "dialect": "sa", "color": "#55636B" },
+    "abu_saad": { "name": "Абу Саад",     "ar": "أَبو سَعْد",     "voice": "ar-BH-AliNeural",     "dialect": "sa", "color": "#7A5C3E" },
+    "noura":    { "name": "Нура",         "ar": "نُورة",         "voice": "ar-SA-ZariyahNeural", "dialect": "sa", "color": "#8E3A6E" },
+    "abdullah": { "name": "д-р Абдулла",  "ar": "د. عَبْدُ الله",  "voice": "ar-OM-AbdullahNeural","dialect": "f",  "color": "#3D5A80" },
+    "abu_khalid": { "name": "Абу Халид",  "ar": "أَبو خالِد",     "voice": "ar-QA-MoazNeural",    "dialect": "sa", "color": "#6B4E2E" },
+    "mariam":   { "name": "Марьям",       "ar": "مَرْيَم",        "voice": "ar-AE-FatimaNeural",  "dialect": "ae", "color": "#B3476A" },
+    "hamdan":   { "name": "Хамдан",       "ar": "حَمْدان",       "voice": "ar-AE-HamdanNeural",  "dialect": "ae", "color": "#1F6F78" },
+    "passerby": { "name": "Прохожий",     "ar": "رَجُل",          "voice": "ar-EG-ShakirNeural",  "dialect": "f",  "color": "#7A5C3E" },
+    "barista":  { "name": "Бариста",      "ar": "الباريستا",     "voice": "ar-YE-SalehNeural",   "dialect": "sa", "color": "#8B5A2B" },
+    "seller":   { "name": "Продавец",     "ar": "البائِع",       "voice": "ar-IQ-BasselNeural",  "dialect": "sa", "color": "#6B4E2E" },
+    "registrar":{ "name": "Сотрудник",    "ar": "المُوَظَّف",     "voice": "ar-LB-RamiNeural",    "dialect": "sa", "color": "#55636B" },
+    "librarian":{ "name": "Библиотекарь", "ar": "أَمين المَكْتَبة", "voice": "ar-SY-LaithNeural",   "dialect": "sa", "color": "#3D5A80" },
+    "narrator": { "name": "Рассказчик",   "ar": "الرّاوي",       "voice": "ar-QA-AmalNeural",    "dialect": "f",  "color": "#5E7468" }
+  },
+  "voices": {
+    "word_f": "ar-SA-ZariyahNeural",
+    "word_x_sa": "ar-SA-HamedNeural",
+    "word_x_ae": "ar-AE-FatimaNeural"
+  },
+  "spheres": {
+    "daily": "Быт", "city": "Город", "travel": "Путешествия", "uni": "Университет", "work": "Работа",
+    "business": "Бизнес", "economy": "Экономика", "finance": "Финансы", "politics": "Политика",
+    "media": "СМИ", "culture": "Культура"
+  },
+  "seasons": [
+    {
+      "id": "s1",
+      "title": "Сезон 1 · Эр-Рияд и Дубай",
+      "ar": "المَوْسِمُ الأَوَّلُ",
+      "level": "A2 → B1",
+      "weeks": [
+        { "id": "w01", "ru": "Прилёт в Эр-Рияд",            "ar": "الوُصول",              "file": "weeks/w01.json" },
+        { "id": "w02", "ru": "Город: метро, кафе, магазины", "ar": "المَدينة", "file": "weeks/w02.json" },
+        { "id": "w03", "ru": "Университет",                  "ar": "الجامِعة", "file": "weeks/w03.json" },
+        { "id": "w04", "ru": "Быт и сервисы · контроль 1",   "ar": "الحَياة اليَوْمِيّة" },
+        { "id": "w05", "ru": "Начало стажировки",            "ar": "التَّدْريب" },
+        { "id": "w06", "ru": "Деловое общение",              "ar": "التَّواصُل التِّجاريّ" },
+        { "id": "w07", "ru": "Культура и общество Залива",   "ar": "المُجْتَمَع والثَّقافة" },
+        { "id": "w08", "ru": "Экономика и Видение 2030 · контроль 2", "ar": "الاِقْتِصاد" },
+        { "id": "w09", "ru": "Исламские финансы I",          "ar": "الصَّيْرَفة الإسْلامِيّة" },
+        { "id": "w10", "ru": "Сукук, партнёрство, финтех",   "ar": "الصُّكوك والتِّقْنِيّة المالِيّة" },
+        { "id": "w11", "ru": "Политика и МО · контроль 3",   "ar": "السِّياسة" },
+        { "id": "w12", "ru": "Регион: безопасность и энергетика", "ar": "الأَمْن والطّاقة" },
+        { "id": "w13", "ru": "СМИ и деловая переписка",      "ar": "الإعْلام" },
+        { "id": "w14", "ru": "Форум «Россия — Залив» · итог", "ar": "المُنْتَدى" }
+      ]
+    }
+  ],
+  "base": "lexicon-base.json"
+}
