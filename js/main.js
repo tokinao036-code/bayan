@@ -69,7 +69,11 @@ function route() {
   };
   // плавная смена экрана (если браузер умеет и не просили меньше анимаций)
   const de = document.documentElement;
-  if (document.startViewTransition && !location.search.includes('shot') && !de.classList.contains('lite') && !de.classList.contains('touch') && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(swap);
+  if (document.startViewTransition && !location.search.includes('shot') && !de.classList.contains('lite') && !de.classList.contains('touch') && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // быстрые переходы подряд прерывают анимацию — это нормально, ошибку глушим
+    const t = document.startViewTransition(swap);
+    t.ready.catch(() => {}); t.finished.catch(() => {});
+  }
   else swap();
 }
 
